@@ -8,7 +8,7 @@ Ce projet a ete realise dans le cadre du cours de developpement Web HTML5/CSS3 d
 
 Le site est accessible en ligne a l'adresse suivante :
 
-[https://younes-andaloussi.github.io/TP-Examen-site-web-Triumph/pages/a_propos.html](https://younes-andaloussi.github.io/TP-Examen-site-web-Triumph/pages/a_propos.html)
+[https://younes-andaloussi.github.io/TP-Examen-site-web-Triumph/index.html](https://younes-andaloussi.github.io/TP-Examen-site-web-Triumph/index.html)
 
 ## Presentation
 
