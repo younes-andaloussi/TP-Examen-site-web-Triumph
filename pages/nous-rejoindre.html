@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <title>Nous rejoindre</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-titre">
+                <h1>TRIUMPH</h1>
+                <h3>La Légende Britannique</h3>
+                <p>Site consacré à l'histoire de Triumph Motorcycles et à l'évolution de ses modèles emblématiques.</p>
+            </div>
+        </header>
+
+        <nav class="navigateur">
+            <a href="index.html">Accueil</a>
+            <a href="histoire.html">Histoire de Triumph</a> <!-- La classe active sert à indiquer quel bouton du menu correspond à la page actuellement ouverte. -->
+            <a href="nous-rejoindre.html" class="active">Nous rejoindre</a>
+            <a href="a_propos.html">A propos du projet</a>
+            <a href="motos/bonneville.html">Bonneville</a>
+            <a href="motos/daytona.html">Daytona</a>
+            <a href="motos/street_triple.html">Street Triple</a>
+            <a href="motos/speed_triple.html">Speed Triple</a>
+            <a href="motos/tiger.html">Tiger</a>
+            <a href="motos/rocket.html">Rocket</a>
+            <a href="motos/thruxton.html">Thruxton</a>
+            <a href="motos/scrambler.html">Scrambler</a>
+        </nav>
+
+        <main>
+            <section class="formulaire-section">
+                <h1>Nous rejoindre</h1>
+
+                <p class="intro-formulaire">
+                    Rejoignez la communauté Triumph et partagez votre passion avec d'autres motards. Présentez-vous, racontez votre parcours de pilote, décrivez votre Triumph et partagez vos souvenirs, vos aventures, vos voyages ou simplement votre expérience au guidon de la légende britannique.
+                </p>
+
+                <form action="#" method="get">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
+
+                    <label for="email">adresse e-mail :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="region">Pays ou région :</label>
+                    <input type="text" id="region" name="region" placeholder="Exemple : Belgique, Wallonie, Flandre...">
+
+                    <label for="modele">Modèle Triumph possédé</label>
+                    <input type="text" id="modele" name="modele" placeholder="exemple : speed triple">
+
+                    <label for="anee">Anée du modèle :</label>
+                    <input type="number" id="annee" name="annee" min="1902" max="2030">
+
+                    <label for="experience">Depuis combien de temps roulez-vous a moto ?</label>
+                    <select id="experience" name="experience">
+                        <option value="">Sélectionnez une réponse</option>
+                        <option value="moin1">Moins d'un an</option>
+                        <option value="1-5">1 à 5 ans</option>
+                        <option value="5-10">5 à 10 ans</option>
+                        <option value="10-20">10 à 20 ans</option>
+                        <option value="20plus">Plus de 20 ans</option>
+                    </select>
+
+                    <label for="triumph">Depuis combien de temps possédez-vous votre Triumph ?</label>
+                    <input type="text" id="triumph" name="triumph" placeholder="Exemple : 3 ans">
+
+                    <label for="histoire">
+                        Racontez-nous votre histoire de motard et celle de votre Triumph :
+                    </label>
+
+                    <textarea
+                        id="histoire"
+                        name="histoire"
+                        rows="10"
+                        placeholder="Parlez-nous de vos débuts à moto, de votre parcours, de votre Triumph, de vos voyages, de vos meilleurs souvenirs, de vos aventures ou de ce qui rend cette machine spéciale à vos yeux...">
+                    </textarea>
+
+                    <label for="photos">Ajoutez des photos de votre Triumph :</label>
+                     <input type="file" id="photos" name="photos" accept="image/*" multiple>
+
+                    <input type="submit" value="Rejoindre la communauté">
+                             
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <h1>TRIUMPH</h1>
+            <p>Projet académique réalisé par Younes Andaloussi dans le cadre du cours de développement Web HTML5/CSS3.</p>
+            <p>Les informations et illustrations présentées sont utilisées à des fins éducatives uniquement.</p>
+            <p>© 2026 - Tous droits réservés à leurs propriétaires respectifs. Aucune affiliation avec Triumph Motorcycles.</p>
+        </footer>
+    </body>
+</html>

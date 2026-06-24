@@ -1,0 +1,252 @@
+body 
+{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #000000;
+    color: #F5F5F5;
+}
+
+h1, h2, h3 
+{
+    text-align: center;
+    color: #D71920;
+}
+
+
+
+header {
+    background-image: url("../images/fond-header-triumph.png");
+    background-position: center 10;
+    height: 100px;
+    background-size: cover;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 2px solid #D71920;
+}
+
+header h1
+{
+    color: #D71920;
+    font-size: 30px;
+    margin: 0;
+    margin-top: 30px;
+}
+
+header h3
+{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 15px;
+}
+
+header p 
+{
+    color: #F5F5F5;
+    font-size: 12px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.navigateur
+{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* crée 4 colonnes de même largeur. */
+    gap: 10px; /* ajoute un espace entre les boutons. */
+}
+
+.navigateur a 
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.80);
+    border: 1px solid #D71920;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.navigateur a:hover
+{
+    background-color: rgba(215, 25, 32, 0.90);
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+.navigateur .active /* correspondant à la page actuellement affichée. */
+{
+    background-color: rgba(215, 25, 32, 0.90);
+    color:#FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+#menu-principal
+{
+    background-image: url("../images/fond-menu-triumph.png");
+    height: 500px;
+    background-size: cover; /* voir etape 4 documentation */
+    background-position: center;
+
+    display: flex;
+    justify-content: center; /* voir etape 7 documentation */
+    align-items: center;
+}
+
+.menu-accueil
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* voir etape 6 documentation */
+    gap: 10px;
+    margin-top: 180px;
+
+}
+
+.menu-accueil a /* voir etape 8 documentation */
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.80);
+    border: 1px solid #D71920;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.menu-accueil a:hover /* voir etape 9 documentation */
+{
+    background-color: rgba(215, 25, 32, 0.90);
+    color: #FFFFFF;
+    transition: 0.3s; /* rend le changement progressif au lieu d’être brutal. */
+    transform: scale(1.05); /* Agrandir l'élément à 105 % de sa taille normale. */
+
+}
+
+.main-aside 
+{
+    display: flex;
+    align-items: flex-start;
+}
+
+aside
+{
+    width: 500px;
+    order: 1;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 15px;
+    background-color: rgba(17, 17, 17, 0.90);
+    border-left: 2px solid #D71920;
+    position: sticky; /* maintient le sommaire visible pendant le défilement */
+    top: 20px;
+    height: fit-content; /*la hauteur de l’aside doit s’adapter uniquement à son contenu.*/
+}
+
+aside a
+{
+    display: block; /*fait que chaque lien occupe toute la largeur du sommaire.*/
+
+    text-decoration: none;
+    color: #FFFFFF;
+
+    padding: 10px;
+
+    margin-bottom: 8px;
+
+    border-bottom: 1px solid #333333;
+
+    transition: 0.3s;
+}
+
+aside a:hover
+{
+    background-color: rgba(215, 25, 32, 0.20);
+
+    color: #D71920;
+
+    padding-left: 15px;
+}
+
+main
+{
+    order: 2;
+}
+
+main h1
+{
+    background-color: rgba(215, 25, 32, 0.90);
+    color: #FFFFFF;
+    padding: 12px;
+    text-align: center;
+    border-left: 4px solid #FFFFFF;
+    border-right: 4px solid #FFFFFF;
+}
+
+main h2
+{
+    color: #D71920;
+    text-align: center;
+
+    font-size: 2.2em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    text-shadow: 0 0 10px rgba(215, 25, 32, 0.3);
+
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+
+    padding: 15px 0;
+}
+
+main h3
+{
+    color: white;
+
+    text-align: center;
+
+    font-style: italic;
+
+    font-size: 1.5em; /* em = unité relative.La taille est calculée à partir de la taille du parent.*/
+
+    margin-bottom: 40px;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column; /*place les éléments les uns en dessous des autres.*/
+    gap: 15px;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.imgHistoire
+{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+footer 
+{
+    background-image: url("../images/fond-footer-triumph.png");
+    background-position: center 10;
+    height: 100px;
+    background-size: cover;
+    text-align: center;
+    border-top: 2px solid #D71920;
+    font-size: 10px;
+}
+
+footer h1
+{
+    color: #D71920;
+    font-size: 15px;
+    margin: 0; 
+    margin-top: 10px;
+}
